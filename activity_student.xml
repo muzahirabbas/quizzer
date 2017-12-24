@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.seecs.muzahir.e_quizzer.student"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ListView
+        android:id="@+id/listt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oht" />
+
+    <TextView
+        android:id="@+id/oht"
+        android:layout_width="92dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="16dp"
+        android:text="Quizzes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintBottom_toTopOf="@+id/listt"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Log out"
+        android:onClick="onlogout"
+        app:layout_constraintBottom_toTopOf="@+id/listt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/oht"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

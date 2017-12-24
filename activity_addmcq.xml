@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.seecs.muzahir.e_quizzer.addmcq">
+
+    <EditText
+        android:id="@+id/qstatement"
+        android:layout_width="0dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Statement of Question"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/optA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/optB"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginStart="19dp"
+        android:ems="10"
+        android:hint="Option B"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/optC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optA" />
+
+    <EditText
+        android:id="@+id/optC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginStart="19dp"
+        android:ems="10"
+        android:hint="Option C"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/optD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optB" />
+
+    <EditText
+        android:id="@+id/optD"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:hint="Option D"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optC" />
+
+    <EditText
+        android:id="@+id/optA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginStart="19dp"
+        android:ems="10"
+        android:hint="Option A"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/optB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qstatement" />
+
+    <EditText
+        android:id="@+id/markx"
+        android:layout_width="117dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Marks"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/saveb"
+        app:layout_constraintTop_toBottomOf="@+id/optD"
+        app:layout_constraintVertical_bias="0.916" />
+
+    <RadioGroup
+        android:id="@+id/ansgroup"
+        android:layout_width="56dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/markx"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/rba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="A"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <RadioButton
+            android:id="@+id/rbc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <RadioButton
+            android:id="@+id/rbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="D"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <RadioButton
+            android:id="@+id/rbb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="73dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:text="Correct"
+        app:layout_constraintBottom_toTopOf="@+id/saveb"
+        app:layout_constraintStart_toStartOf="@+id/ansgroup"
+        app:layout_constraintTop_toBottomOf="@+id/optD" />
+
+    <Button
+        android:id="@+id/saveb"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="72dp"
+        android:layout_marginEnd="16dp"
+        android:text="SAVE"
+        android:onClick="onsave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
